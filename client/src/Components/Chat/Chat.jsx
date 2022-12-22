@@ -20,6 +20,7 @@ const Chat = () => {
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
     socket = io("https://chat-hchn.onrender.com/");
+    
     setName(name);
     setRoom(room);
     console.log(socket);
